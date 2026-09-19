@@ -1,0 +1,33 @@
+#
+# Copyright (C) 2024-2026 Project Infinity X
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+TARGET_SUPPORTS_OMX_SERVICE := false
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit some common Project Infinity X stuff
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+
+# Inherit from oscaro device
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := infinity_oscaro
+PRODUCT_DEVICE := oscaro
+PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := CPH2381
+PRODUCT_MANUFACTURER := OnePlus
+
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="OP535DL1-user 14 UKQ1.230924.001 S.205d1c5-4a532-1108cb release-keys" \
+    BuildFingerprint=OnePlus/CPH2381/OP535DL1:14/UKQ1.230924.001/S.205d1c5-4a532-1108cb:user/release-keys \
+    DeviceName=OP535DL1 \
+    DeviceProduct=OP535DL1 \
+    SystemDevice=OP535DL1 \
+    SystemName=OP535DL1

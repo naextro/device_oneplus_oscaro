@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- OnePlus Nord CE 2 Lite (oscaro / sm6375) device trees -->
+    <project name="naextro/device_oneplus_oscaro" path="device/oneplus/oscaro" remote="github" revision="16.0" />
+    <project name="naextro/device_oneplus_sm6375-common" path="device/oneplus/sm6375-common" remote="github" revision="16.0" />
+
+    <!-- Vendor blobs -->
+    <project name="NoCache-69/vendor_oneplus_oscaro" path="vendor/oneplus/oscaro" remote="github" revision="16.0" />
+    <project name="NoCache-69/vendor_oneplus_sm6375-common" path="vendor/oneplus/sm6375-common" remote="github" revision="16.0" />
+
+    <!-- Kernel -->
+    <project name="NoCache-69/android_kernel_oneplus_sm6375" path="kernel/oneplus/sm6375" remote="github" revision="16-ksun" />
+
+    <!-- Hardware & HALs -->
+    <project name="NoCache-69/hardware_oplus" path="hardware/oplus" remote="github" revision="lineage-23.1" />
+    <project name="NoCache-69/hardware_dolby" path="hardware/dolby" remote="github" revision="master" />
+
+    <!-- Camera / Audio Extras -->
+    <project name="AxionAOSP/android_packages_apps_ViPER4AndroidFX" path="packages/apps/ViPER4AndroidFX" remote="github" revision="lineage-23.1" />
+    <project name="NoCache-69/packages_apps_prebuilt-camera" path="packages/apps/prebuilt-camera" remote="github" revision="16.0" />
+</manifest>
